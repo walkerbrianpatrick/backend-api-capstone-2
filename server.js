@@ -27,12 +27,6 @@ app.use(morgan('dev'));
 // add the error handler module
 app.use(errorHandler());
 
-// Debug stuff
-
-console.log(process.env.TEST_DATABASE);
-console.log(process.env.PORT);
-
-
 // Routes
 // Mount the api router at path /ai
 app.use('/api', apiRouter);
